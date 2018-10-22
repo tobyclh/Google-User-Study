@@ -1,0 +1,96 @@
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" />
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<section class="container" id="TranscriptionFromAnImage"><!-- Instructions -->
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Image Transcription Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
+<div class="panel-body" id="instructionBody">
+<p>Transcribe the text contained in the image.</p>
+
+<ul>
+	<li>Indicate if the image is legible or not</li>
+	<li>Look at the receipt and copy the number of items purchased.</li>
+	<li>Provide the dollar amount for tax.</li>
+	<li>Provide the dollar amount for the total sale.</li>
+	<li><strong>Do not</strong> use dollar signs ($) but make sure you have two decimal points. (i.e. 4.35)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- End Instructions --><!-- Image Transcription Layout -->
+<label>${body_language_type}</label>
+<div class="row" id="workContent"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/${video_link}" width="560"></iframe>
+
+
+<div class="col-xs-12 col-sm-4 fields">
+<div class="form-group"><label class="group-label">What do you think about this body language in public speaking?</label>
+    
+<div><span class="firstLabel">Very meaningless</span>
+<div class="radio-inline"><label><input autocomplete="off" id="1" name="Meaning" required type="radio" value="1" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="2" name="Meaning" required type="radio" value="2" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="3" name="Meaning" required type="radio" value="3" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="4" name="Meaning" required type="radio" value="4" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="5" name="Meaning" required type="radio" value="5" />  Very meaningful </label></div>
+</div>
+<div><span class="firstLabel">Very distracting</span>
+<div class="radio-inline"><label><input autocomplete="off" id="1" name="Engaging" required type="radio" value="1" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="2" name="Engaging" required type="radio" value="2" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="3" name="Engaging" required type="radio" value="3" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="4" name="Engaging" required type="radio" value="4" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="5" name="Engaging" required type="radio" value="5" /> Very engaging </label></div>
+</div>
+<div><span class="firstLabel">Very confusing</span>
+<div class="radio-inline"><label><input autocomplete="off" id="1" name="Clearness" required type="radio" value="1" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="2" name="Clearness" required type="radio" value="2" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="3" name="Clearness" required type="radio" value="3" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="4" name="Clearness" required type="radio" value="4" /> </label></div>
+<div class="radio-inline"><label><input autocomplete="off" id="5" name="Clearness" required type="radio" value="5" /> Very clear </label></div>
+</div>
+
+</div>
+</div>
+<!-- End Image Transcription Layout --><!-- Open internal style sheet -->
+<style type="text/css">#collapseTrigger{
+  color:#fff;
+  display: block;
+  text-decoration: none;
+}
+#submitButton{
+  white-space: normal;
+}
+.firstLabel {
+    margin-right: 5px;
+}
+.image{
+  margin-bottom: 15px; 
+}
+.group-label{
+  display: block;
+}
+.radio-inline>label{
+  font-weight: normal;
+}
+
+
+</style>
+<!-- Close internal style sheet --><!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --><script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><script>
+  $(document).ready(function() {
+    // Instructions expand/collapse
+    var content = $('#instructionBody');
+    var trigger = $('#collapseTrigger');
+    content.hide();
+    $('.collapse-text').text('(Click to expand)');
+    trigger.click(function(){
+      content.toggle();
+      var isVisible = content.is(':visible');
+      if(isVisible){
+        $('.collapse-text').text('(Click to collapse)');
+      }else{
+        $('.collapse-text').text('(Click to expand)');
+      }
+    });
+    // end expand/collapse
+  });
+</script></div>
+</section>
